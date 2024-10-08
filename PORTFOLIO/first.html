@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <!-- <i class="fa.solid fa-s"></i> -->
+                    <div class="logo-text">Subhash Singh</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Costomer</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="m.jpg" alt="profile pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi, I'm</h5>
+                    <span class="">Frontend Developer</span>
+                    <h1>Subhash Singh</h1>
+                    <p>I'm a skilled web developer passionate about building dynamic, responsive websites using modern web technologies like HTML, CSS, JavaScript, React, and more. My goal is to create user-friendly and accessible web applications.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="title">
+            <h2>About Me</h2>
+            <p>I am a frontend developer with a passion for designing and building clean, user-friendly websites. My mission is to help brands succeed by creating stunning websites that function seamlessly on all devices.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-pic">
+                <img src="m.jpg" alt="About Image">
+            </div>
+            <div class="about-text">
+                <h3>Skills & Expertise</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Vue.js, Angular</li>
+                    <li>Responsive Web Design</li>
+                    <li>UI/UX Design</li>
+                    <li>Version Control (Git, GitHub)</li>
+                    <li>Cross-Browser Compatibility</li>
+                </ul>
+                <a href="#portfolio" class="btn">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="contact-form">
+            <!-- Formspree Integration: Replace "your-email@example.com" with your Formspree email -->
+            <form action="https://formspree.io/f/xjvpgjbk" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Subhash Singh. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+                <a href="https://github.com" target="_blank">GitHub</a> |
+                <a href="mailto:subhashs53804@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var togglebtn = document.querySelector(".togglebtn");
+        var nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", function () {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>
